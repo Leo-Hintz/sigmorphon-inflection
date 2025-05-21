@@ -2,7 +2,7 @@
 
 ## Todos:
 
-#### Technical challenges
+#### Technical challenges:
 - Choose two more languages (one of them should be Ancient Greek, Sanskrit or Navajo)
 - Get University of Illinois model up and running
 - Recreate results from other papers
