@@ -14,9 +14,11 @@ args = parser.parse_args()
 with open(args.project_path + "/" + args.config) as config_file:
     config = json.load(config_file)
     models = config["models"]
-
+    languages = config["languages"]
+    
 # Run training scripts
 for model in models:
-    print(model['train_path'])
-    path = Path(args.project_path + "/" + model["train_path"])
-    subprocess.run(["python3", path.name, "--language", 'pol'], cwd=path.parent)
+    for language in languages:
+        path = Path(args.project_path + "/" + model["train_path"])
+        print(f"Training model {model['name']} on {language}")
+        subprocess.run(["python3", path.name, "--language", language], cwd=path.parent, check=True)

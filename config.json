@@ -6,15 +6,12 @@
     "models": [
         {
             "name": "Girrbach",
-            "repo_path": "src/Girrbach",
-            "train_path": "src/Girrbach/experiment.py",
-            "run_path": "/some/path",
-            "results_path": "predictions/retrain_results"
+            "train_path": "src/Girrbach/train_best_parameters.py",
+            "results_path": "src/Girrbach/predictions/retrain_results"
         }
     ],
     "languages": [
         "tur",
-        "eng",
-        "pol"
+        "eng"
     ]
 }
