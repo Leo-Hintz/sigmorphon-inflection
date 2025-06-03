@@ -1,0 +1,20 @@
+{
+    "python_version": "3.9",
+    "requirements_path": "src/Girrbach/requirements.txt",
+    "conda_path": "/usr/local/miniconda",
+    
+    "models": [
+        {
+            "name": "Girrbach",
+            "repo_path": "src/Girrbach",
+            "train_path": "src/Girrbach/experiment.py",
+            "run_path": "/some/path",
+            "results_path": "predictions/retrain_results"
+        }
+    ],
+    "languages": [
+        "tur",
+        "eng",
+        "pol"
+    ]
+}
